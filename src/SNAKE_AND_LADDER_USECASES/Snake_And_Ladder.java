@@ -2,12 +2,14 @@ package SNAKE_AND_LADDER_USECASES;
 import java.util.Random;
 public class Snake_And_Ladder {
     public static void main(String[] args) {
-        System.out.println("Welcome to Snake and Ladder Game");
+        System.out.println("Welcome to Snake and Ladder Game!!!");
         int player_position=0; //starting position of player
         int winning_position=100; //usecase1:Snake and Ladder game played with single player at start position 0
         Random random = new Random();
+        int total_dice_rolls=0;
         while(player_position<winning_position){
             int dice_roll = random.nextInt(6) + 1; //usecase2:The Player rolls the die to get a number 1-6
+            total_dice_rolls++;
             int option = random.nextInt(3); //usecase3:ladder,snake condition
             switch (option) {
                 case 0:
@@ -26,13 +28,11 @@ public class Snake_And_Ladder {
             else if (player_position > winning_position) { //usecase5:beyond winning position
                 player_position = winning_position;
             }
-
-
-
-
-
+            System.out.println("Player rolled the dice : " + dice_roll + " and moved to position : " + player_position);
+            /*usecase6: the no. of times the dice was rolled and the position of player at every roll*/
         }
-
-        }
+        System.out.println("Congratulations! you won the game!");
+        System.out.println("the total number of times the dice was rolled to win the game : "+total_dice_rolls);
+    }
 
     }
