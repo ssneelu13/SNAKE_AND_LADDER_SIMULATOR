@@ -20,6 +20,13 @@ public class Snake_And_Ladder {
                 default:
                     player_position += dice_roll; //no ladder,no snake-bite then move forward
             }
+             if(player_position < 0){ //usecase4:player position below zero
+                player_position=0;
+            }
+           
+
+
+
         }
 
         }
