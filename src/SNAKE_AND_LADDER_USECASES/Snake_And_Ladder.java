@@ -23,6 +23,10 @@ public class Snake_And_Ladder {
              if(player_position < 0){ //usecase4:player position below zero
                 player_position=0;
             }
+            else if (player_position > winning_position) { //usecase5:beyond winning position
+                player_position = winning_position;
+            }
+
 
 
 
