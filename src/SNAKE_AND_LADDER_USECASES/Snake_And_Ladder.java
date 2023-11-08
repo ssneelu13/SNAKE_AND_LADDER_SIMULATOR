@@ -23,7 +23,7 @@ public class Snake_And_Ladder {
              if(player_position < 0){ //usecase4:player position below zero
                 player_position=0;
             }
-           
+
 
 
 
