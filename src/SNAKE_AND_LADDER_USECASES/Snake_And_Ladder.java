@@ -8,7 +8,7 @@ public class Snake_And_Ladder {
         Random random = new Random();
         while(player_position<winning_position){
             int diceRoll = random.nextInt(6) + 1; //usecase2:The Player rolls the die to get a number 1-6
-            
+
         }
 
         }
